@@ -1,8 +1,114 @@
-<html>
-  <head>
-    <title>Facebook Login</title>
-  </head>
-  <body>
-    <!-- Write your code here -->
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Facebook Login</title>
+
+  <style>
+    body {
+      background-color: #f6f6f6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+      gap: 50px;
+    }
+
+    /* common class for both sections */
+    .section {
+      display: inline-block;
+    }
+
+    /* left section */
+    .left {
+      width: 450px;
+      margin-top: 70px;
+    }
+
+    .left img {
+      width: 300px;
+    }
+
+    .left p {
+      font-size: 20px;
+      margin-top: 10px;
+    }
+
+    /* right section */
+    form {
+      display: flex;
+      width: 300px;
+      background-color: white;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px #ccc;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    input {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+    }
+
+    button {
+      background-color: #1877f2;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    a {
+      text-decoration: none;
+      color: #1877f2;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .signup {
+      background-color: #42b72a;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Left Section -->
+  <div class="section left">
+    <img
+      src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg"
+      alt="Facebook logo"
+    />
+    <p>Facebook helps you connect and share with the people in your life.</p>
+  </div>
+
+  <!-- Right Section -->
+  <div class="section right">
+    <form>
+      <input
+        type="text"
+        id="email"
+        placeholder="Email address or phone number"
+      />
+
+      <input
+        type="password"
+        id="password"
+        placeholder="Password"
+      />
+
+      <button type="submit">Log in</button>
+
+      <a href="#">Forgotten account?</a>
+    </form>
+
+    <button class="signup">Create new account</button>
+  </div>
+</body>
 </html>
